@@ -1,0 +1,43 @@
+ALGORITHM task1
+FUNCTION dot_product(v1,v2) : INTEGER
+VAR
+    scalar: INTEGER := v1 * v2;
+BEGIN
+    
+    RETURN scalar ;
+END
+
+VAR
+    v1,v2,n : INTEGER;
+    
+    
+BEGIN
+    FOR i FROM 0 TO n STEP step  DO
+        Read(v1);
+        Read(v2);
+        IF (dot_product(v1,v2)==0) THEN
+            Write("The two vectors of given IR are orthogonal!");
+        ELSE
+            Write("The two vectors of given IR are not orthogonal!");
+        END_IF
+        
+    END_FOR
+END
+
+
+ALGORITHM task2
+VAR
+    n,target: INTEGER;
+    arr[n]: ARRAY ;
+BEGIN
+    FOR i FROM 0 TO n-1 STEP step  DO
+        target=arr[i];
+        FOR j FROM 0 TO i-j-1 STEP step  DO
+            IF (j>=0 and arr[j]>key) THEN
+                arr[j+1] = arr[j];
+            END_IF
+        END_FOR 
+        arr[j+1]=key;
+
+    END_FOR
+END
