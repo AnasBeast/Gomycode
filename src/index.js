@@ -7,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div style={{"backgroundImage": "url(https://gomytech.gomycode.co/content/images/2020/12/bah-launch-01-min.jpg)","height":"100vh","backgroundSize": "cover"}}>
+      <App />
+
+    </div>
   </React.StrictMode>
 );
 
